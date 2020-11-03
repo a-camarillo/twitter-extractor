@@ -31,6 +31,6 @@ def search_tweets(api,query,count,date=datetime.today(),days_back=1):
 
 def tweets_to_json(tweets):
 	''' writes dictionary of tweets to json file '''
-	with open(f'tweets_{datetime.today().strftime("%Y_%m_%d")}.json','w') as n:
+	with open(f'data/tweets_{datetime.today().strftime("%Y_%m_%d")}.json','w') as n:
 		json.dump(tweets,n)
 	print('JSON file created')
